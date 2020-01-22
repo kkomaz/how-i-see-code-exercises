@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+    <script>
+      let number = {
+        result: 20,
+      };
+
+      function changeValue(num) {
+        number.result = num
+      }
+
+      function revealNumber() {
+        document.getElementById("value-id").innerHTML = number.result;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <button type="button" onclick="changeValue(1)">Number 1</button>
+      <button type="button" onclick="changeValue(2)">Number 2</button>
+      <button type="button" onclick="changeValue(3)">Number 3</button>
+      <button type="button" onclick="changeValue(4)">Number 4</button>
+    </div>
+    <div>
+      <button type="button" onclick="revealNumber()">Reveal the Number</button>
+      <p id="value-id" />
+    </div>
+  </body>
+</html>
